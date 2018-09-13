@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RainAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="END-if-seH">
+                                <rect key="frame" x="0.0" y="20" width="600" height="524"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TdG-mD-RLW">
+                                <rect key="frame" x="0.0" y="677" width="375" height="100"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="TDQ-GH-vuh"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="jHy-45-Jjg"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TN-uK-sFQ">
+                                <rect key="frame" x="329" y="552" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="startRainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzL-rz-jxh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yol-IS-Qcu">
+                                <rect key="frame" x="0.0" y="552" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="slowRainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pW2-cl-HY1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aU-Rj-ehW">
+                                <rect key="frame" x="52" y="552" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fastRainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XZh-rI-SCB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8aU-Rj-ehW" firstAttribute="leading" secondItem="Yol-IS-Qcu" secondAttribute="trailing" constant="8" id="0dT-4Y-dNV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8TN-uK-sFQ" secondAttribute="trailing" constant="2" id="0fm-KN-E19"/>
+                            <constraint firstItem="8TN-uK-sFQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="329" id="4Rr-4M-ebb"/>
+                            <constraint firstItem="END-if-seH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6db-mI-qm8"/>
+                            <constraint firstItem="END-if-seH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="98o-mf-j0C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yol-IS-Qcu" secondAttribute="bottom" constant="4" id="GpK-Mo-YkM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="END-if-seH" secondAttribute="bottom" constant="56" id="HDm-Ip-8o1"/>
+                            <constraint firstAttribute="bottom" secondItem="TdG-mD-RLW" secondAttribute="bottom" constant="-10" id="HhG-B5-7X3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8TN-uK-sFQ" secondAttribute="bottom" constant="4" id="KqZ-5P-6OK"/>
+                            <constraint firstItem="END-if-seH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ms8-xv-vYt"/>
+                            <constraint firstItem="Yol-IS-Qcu" firstAttribute="width" secondItem="8TN-uK-sFQ" secondAttribute="width" id="PYT-26-O8T"/>
+                            <constraint firstItem="Yol-IS-Qcu" firstAttribute="width" secondItem="8aU-Rj-ehW" secondAttribute="width" id="Tac-hs-jbw"/>
+                            <constraint firstItem="8aU-Rj-ehW" firstAttribute="top" secondItem="END-if-seH" secondAttribute="bottom" constant="8" id="U2s-3H-eM0"/>
+                            <constraint firstItem="Yol-IS-Qcu" firstAttribute="height" secondItem="8TN-uK-sFQ" secondAttribute="height" id="X69-uA-Njj"/>
+                            <constraint firstItem="8TN-uK-sFQ" firstAttribute="leading" secondItem="8aU-Rj-ehW" secondAttribute="trailing" constant="233" id="azd-nQ-A0C"/>
+                            <constraint firstItem="Yol-IS-Qcu" firstAttribute="top" secondItem="END-if-seH" secondAttribute="bottom" constant="8" id="iM3-I0-TOK"/>
+                            <constraint firstItem="TdG-mD-RLW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kWd-08-sel"/>
+                            <constraint firstItem="END-if-seH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kw7-wY-B99"/>
+                            <constraint firstItem="Yol-IS-Qcu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nwM-fs-r8R"/>
+                            <constraint firstItem="Yol-IS-Qcu" firstAttribute="height" secondItem="8aU-Rj-ehW" secondAttribute="height" id="udK-gJ-j9m"/>
+                            <constraint firstItem="8TN-uK-sFQ" firstAttribute="top" secondItem="END-if-seH" secondAttribute="bottom" constant="8" id="wA8-YD-CcK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TdG-mD-RLW" secondAttribute="trailing" id="xEd-Cw-NlE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fastRainButton" destination="8aU-Rj-ehW" id="jFZ-Ch-O4b"/>
+                        <outlet property="slowRainButton" destination="Yol-IS-Qcu" id="hrj-Oc-Yvm"/>
+                        <outlet property="startRainButton" destination="8TN-uK-sFQ" id="gZA-qL-03w"/>
+                        <outlet property="viewForRain" destination="END-if-seH" id="6iz-xc-8Tv"/>
+                        <outlet property="waterView" destination="TdG-mD-RLW" id="VMs-4P-uv3"/>
+                        <outlet property="waterViewHeightConstrant" destination="TDQ-GH-vuh" id="gGn-th-H2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
